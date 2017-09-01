@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/exo_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:exo_cardview="http://schemas.android.com/tools"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/darkblue"
+    exo_cardview:cardCornerRadius="12dp"
+    exo_cardview:cardElevation="3dp"
+    exo_cardview:contentPadding="4dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/comparison"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_alignTop="@+id/exoImage"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignLeft="@+id/comparisonScale"
+            android:layout_alignStart="@+id/comparisonScale" />
+
+        <ImageView
+            android:id="@+id/exoImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@drawable/exoplanetimg"
+            android:layout_below="@+id/exoplanet_name"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/earth"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/comparison"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/comparison"
+            android:layout_toRightOf="@+id/comparison"
+            app:srcCompat="@drawable/earthimage" />
+
+        <ImageView
+            android:id="@+id/infoButton"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/info"
+            android:clickable="true"
+            android:layout_below="@+id/comparisonScale"
+            android:layout_alignLeft="@+id/exoImage"
+            android:layout_alignStart="@+id/exoImage" />
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:id="@+id/exoplanet_name"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/earth"
+            android:layout_toEndOf="@+id/earth" />
+
+        <TextView
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:id="@+id/exoplanet_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_below="@+id/exoplanet_name"
+            android:layout_alignLeft="@+id/exoplanet_name"
+            android:layout_alignStart="@+id/exoplanet_name" />
+
+        <TextView
+            android:textSize="11sp"
+            android:id="@+id/comparisonScale"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_below="@+id/exoImage"
+            android:layout_toRightOf="@+id/exoImage"
+            android:layout_toEndOf="@+id/exoImage" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+

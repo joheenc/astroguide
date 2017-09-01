@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/asteroid_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:asteroid_cardview="http://schemas.android.com/tools"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/darkblue"
+    asteroid_cardview:cardCornerRadius="12dp"
+    asteroid_cardview:cardElevation="3dp"
+    asteroid_cardview:contentPadding="4dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp" >
+
+        <ImageView
+            android:id="@+id/earth_asteroid_compare"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/asteroid_name"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/earth_asteroid" />
+
+        <ImageView
+            android:id="@+id/earth_moon_compare"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/asteroid_comparison"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/asteroid_comparison"
+            android:layout_toRightOf="@+id/asteroid_comparison"
+            app:srcCompat="@drawable/earth_moon" />
+
+        <ImageView
+            android:id="@+id/info_asteroid"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:clickable="true"
+            android:layout_below="@+id/comparisonScale_asteroid"
+            android:layout_alignLeft="@+id/earth_asteroid_compare"
+            android:layout_alignStart="@+id/earth_asteroid_compare"
+            app:srcCompat="@drawable/info" />
+
+        <ImageView
+            android:id="@+id/asteroid_comparison"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:layout_alignTop="@+id/earth_asteroid_compare"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignLeft="@+id/comparisonScale_asteroid"
+            android:layout_alignStart="@+id/comparisonScale_asteroid" />
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:id="@+id/asteroid_name"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/earth_moon_compare"
+            android:layout_toEndOf="@+id/earth_moon_compare" />
+
+        <TextView
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:id="@+id/asteroid_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_below="@+id/asteroid_name"
+            android:layout_alignLeft="@+id/asteroid_name"
+            android:layout_alignStart="@+id/asteroid_name" />
+
+        <TextView
+            android:id="@+id/comparisonScale_asteroid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="11sp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/earth_asteroid_compare"
+            android:layout_toRightOf="@+id/earth_asteroid_compare"
+            android:layout_toEndOf="@+id/earth_asteroid_compare" />
+
+        <ImageView
+            android:id="@+id/hazardSign"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

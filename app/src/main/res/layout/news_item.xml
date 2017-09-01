@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:news_cardview="http://schemas.android.com/tools"
+    android:layout_margin="4dp"
+    app:cardBackgroundColor="@color/darkblue"
+    news_cardview:cardCornerRadius="12dp"
+    news_cardview:cardElevation="3dp"
+    news_cardview:contentPadding="4dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/articleimage"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/articletitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_alignTop="@+id/articleimage"
+            android:layout_toRightOf="@id/articleimage"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/articledate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/articletitle"
+            android:layout_alignStart="@+id/articletitle"
+            android:layout_below="@+id/articletitle"
+            android:text="TextView"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/articledesc"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:layout_below="@+id/articledate"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/articledate"
+            android:layout_alignStart="@+id/articledate" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

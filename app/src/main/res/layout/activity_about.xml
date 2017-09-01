@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkblue">
+
+
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="ABOUT
+                      \n
+                      \nAstroGuide provides up-to-date astronomy information from a variety of online sources
+                      \nData and images are sourced from the JPL Small-Body Database, the NASA Exoplanet Archive, and Wikipedia.
+                      \nNews is sourced from websites including space.com, astronomy.com, sciencedaily.com, and others.
+                      \nAstronomy Picture of the Day is run by NASA.
+                      \n
+                      \nNOTE: AstroGuide currently REQUIRES internet connection to function. Offline support will be added in
+                      \na future update, but until then, make sure your phone has internet or you will see only a blank screen!
+                      \n
+                      \n
+                      \nIf you appreciate AstroGuide, please consider sharing the app with others and/or leaving a rating
+                      \nMade by Joheen Chakraborty, 2017
+                      \n
+                      \nIf you have any feedback or suggestions, please contact astroguide.about@gmail.com" />
+</LinearLayout>
